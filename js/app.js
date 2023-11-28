@@ -27,7 +27,15 @@ const dias = {
 setInterval(()=>{
 const fecha = new Date()
 const divs = document.getElementsByClassName('transparente')
-const hora = `${dosDigitos(fecha.getHours())}:${dosDigitos(fecha.getMinutes())}:${dosDigitos(fecha.getSeconds())}`
+const h = fecha.getHours()
+const ampm = h>12? 'PM':'AM'
+const etiqueta = `<div id="ampmsec">
+    <ul>
+    <li>${ampm}</li>
+    <li>${dosDigitos(fecha.getSeconds())}</li>
+    </ul>
+    </div>`
+const hora = `${dosDigitos(h%12)}:${dosDigitos(fecha.getMinutes())}:${etiqueta}`
 const diaSemana = fecha.getDay();
 const dia = fecha.getDate()
 const mes = fecha.getMonth()

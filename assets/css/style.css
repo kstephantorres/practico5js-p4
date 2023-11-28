@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 button{
@@ -46,5 +50,13 @@ button {
   color: #ffffff 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
-  /* opacity: 0.5; */
+  width: fit-content;
+  margin: 6px;
+}
+
+section .transparente:nth-child(1){
+  font-size: 30px;
+}
+section .transparente:nth-child(2){
+  font-size: 100px;
 }

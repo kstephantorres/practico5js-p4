@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 button{
@@ -10,7 +15,9 @@ button{
     margin-right:2px ;
 }
 main{
-    
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;
     flex-grow:1;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   }
@@ -20,15 +27,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-
-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 85vw;
-    margin: 20px auto;
-  }
 
 label {
     font-weight: bold;
@@ -46,5 +44,41 @@ button {
   color: #ffffff 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
-  /* opacity: 0.5; */
+  width: 450px;
+  margin: 6px;
+  
 }
+
+section .transparente:nth-child(1){
+  font-size: 30px;
+}
+section .transparente:nth-child(2){
+  font-size: 100px;
+ 
+}
+
+#ampmsec{
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+    
+}
+#ampmsec ul{
+  list-style: none;
+  padding: 0;
+  margin-left: 8px;
+  
+}
+
+
+
+@media all and (max-width:500px){
+  .transparente{
+    width: 95vw;
+  }
+  main{
+    display: flex;
+    align-items: center;
+  }
+}
+
